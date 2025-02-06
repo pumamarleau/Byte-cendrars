@@ -111,6 +111,7 @@ footer{
 }
 
 #accueil-h1{
+    display: grid;
     color: #ffffff;
     font-size: 100px;
     font-family: "Open Sans", sans-serif;

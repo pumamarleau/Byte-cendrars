@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Lycée Byte-Cendrars</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="icon" href="image/logo lbc.png"/>
+    <script defer src="js/contact.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="tab">
+            <img src="image/logo lbc.png" alt="logo LBC" id="imgLBC">
+                <a href="index.html" class="tabs">ACCUEIL</a>
+                <a href="classes.html" class="tabs">CLASSES</a>
+                <a href="contacts.html" class="tabs active">CONTACTS</a>
+                <a href="culture.html" class="tabs">CULTURE</a>
+                <a href="profile.html" class="profilepicture profiletab">TS</a>
+        </nav>
+    </header>
+
+    <h1>Formulaire de contact</h1>
+    <form id="contactform">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="max-width: 50%;">
+                <label for="firstname"><h2>Prénom*</h2></label>
+                <input type="text" id="firstname" name="firstname" placeholder="votre prénom..." required>
+            </div>
+            <div style="max-width: 50%;">
+                <label for="firstname"><h2>Nom*</h2></label>
+                <input type="text" id="name" name="name" placeholder="votre nom..." required>
+            </div>
+        </div>
+        <div>
+            <label for="firstname"><h2>E-mail*</h2></label>
+            <input type="text" id="email" name="email" placeholder="votre e-mail..." required>
+        </div>
+        <div>
+            <label for="firstname"><h2>Objet</h2></label>
+            <input type="text" id="object" name="object" placeholder="l'objet de votre message...">
+        </div>
+        <div style="height: auto;">
+            <label for="firstname"><h2>Message*</h2></label>
+            <textarea id="message" name="message" placeholder="votre message..." required rows="5"></textarea>
+        </div>
+        <div style="display: flex; height: 80px; padding-bottom: 15%;">
+            <button type="submit" id="submitButton">Envoyer</button>
+            <h3 id="logmsg">Une erreur est survenue ...</h3><a id="logdl" download="epreuves/log.txt" href="epreuves/log.txt">Voir les logs <ion-icon name="download-outline"></ion-icon></a>
+        </div>
+
+    </form>
+</body>
+
+
+<footer>
+    <p style="font-size: 100%; font-weight: 500; color: #9d9d9d; align-items: center; background-color: inherit;">Copyright © N/A - V.0.0.1</p>
+    <img src="image/logo lbc.png" alt="logo LBC">
+    <nav class="nodot"> <a>Navigation</a>
+        <li><a class="footernav" href="index.html">Accueil</a></li>
+        <li><a class="footernav" href="classes.html">Classes</a></li>
+        <li><a class="footernav" href="contacts.html">Contacts</a></li>
+        <li><a class="footernav" href="culture.html">Culture</a></li>
+        <li><a class="footernav" href="profile.html">Profile</a></li>
+    </nav>
+</footer>

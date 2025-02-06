@@ -1,0 +1,86 @@
+div{
+    justify-self: center;
+    width: 100%;
+    max-width: 40%;
+    /*background-color: rgba(0, 0, 0, 0.155);*/
+    height: 125px;
+}
+
+h1{
+    justify-self: center;
+    width: 40%;
+    font-weight: 600;
+    font-size: 65px;
+    font-family: "Open Sans", sans-serif;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 35px;
+    font-family: "Open Sans", sans-serif;
+    margin: 0px;
+}
+
+h3{
+    align-self: center;
+    margin-left: 15px;
+
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(154, 0, 0);
+}
+
+input, textarea{
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    color: #9d9d9d;
+
+    display: block;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    border: none;
+    resize: none;
+}
+
+input, textarea:focus{
+    outline: none;
+}
+
+button{
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+
+    background-color: #9d9d9d;
+    pointer-events: fill;
+    border: none;
+    cursor: pointer;
+
+    margin: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    max-height: 45px;
+}
+
+#logdl{
+    margin: 0px 5px;
+    align-self: center;
+
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(154, 0, 0);
+    text-decoration: none;
+
+    display: none;
+}
+
+#logmsg{
+    display: none;
+}

@@ -1,0 +1,53 @@
+div{
+    font-weight: 600;
+    font-size: 35px;
+    font-family: "Open Sans", sans-serif;
+}
+
+div ion-icon{
+    font-size: 150px;
+    margin-right: 50px;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 75px;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 75px;
+    border-bottom: 2px solid #9d9d9d;
+    padding-right: 250px;
+}
+
+#classe{
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; 
+    margin: 200px 100px 100px 100px;
+}
+
+.classes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 45%;
+
+    border: 2px solid #9d9d9d;
+    border-radius: 25px;
+
+    margin: 25px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.error{
+    background-color: #315a6f;
+    
+    cursor: context-menu;
+}

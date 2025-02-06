@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Lycée Byte-Cendrars</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/physique.css" rel="stylesheet">
+    <link rel="icon" href="image/logo lbc.png"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="tab">
+            <img src="image/logo lbc.png" alt="logo LBC" id="imgLBC">
+                <a href="index.html" class="tabs">ACCUEIL</a>
+                <a href="classes.html" class="tabs active">CLASSES</a>
+                <a href="contacts.html" class="tabs">CONTACTS</a>
+                <a href="culture.html" class="tabs">CULTURE</a>
+                <a href="profile.html" class="profilepicture profiletab">TS</a>
+        </nav>
+    </header>
+
+
+    <h1>Informatique</h1>
+    <p class="p">
+        <b>Bienvenue</b> dans le cours d'informatique, un domaine fascinant qui ne cesse de transformer notre monde. L'informatique repose sur des concepts fondamentaux comme <b>la programmation</b>, <b>l'algorithmique</b> et <b>les systèmes numériques</b>, et joue un rôle clé dans presque tous les aspects de notre vie quotidienne.
+    </p>
+    <ion-icon style="position: absolute; font-size: 100px; margin: 20px 0px 0px 70px;" name="lock-closed"></ion-icon>
+    <p style="padding-left: 200px;" class="p">
+        Cette année, nous nous aventurerons dans un domaine passionnant de l’informatique : <b>la cryptologie</b>. La cryptologie, science de la sécurité et du secret, est utilisée pour protéger les données dans le monde numérique. Dans ce cadre, nous explorerons deux méthodes historiques et modernes de chiffrement : <b>le chiffrement César</b>, une méthode simple mais ingénieuse issue de l'Antiquité, et <b>le chiffrement AES</b>, une norme incontournable pour la sécurité informatique aujourd'hui.
+    </p>
+    <ion-icon style="position: absolute; font-size: 100px; margin-left: 70px;" name="image"></ion-icon>
+    <p style="padding-left: 200px;" class="p">
+        En parallèle, nous nous pencherons sur une application ludique mais technique : <b>la stéganographie</b>. Plus précisément, nous apprendrons à dissimuler un message secret dans une image au format <b>BMP</b>, une méthode subtile qui modifie légèrement les pixels pour cacher des informations sans être détectées à l'œil nu.
+    </p>
+    <p class="p">
+        Ce cours sera l’occasion de manipuler des concepts théoriques tout en développant des compétences pratiques en programmation. Préparez-vous à entrer dans l'univers captivant du secret numérique !
+    </p>
+
+
+    <h1>Cryptologie</h1>
+    <p class="p">
+        Le chiffrement de données est un point fondamental des vies depuis que la communication existe. Il permet de protéger nos informations contre les regards indiscrets, que ce soit dans des messages privés ou des transactions financières. À travers l’histoire, des codes secrets ont toujours été utilisés pour sécuriser les échanges, et aujourd'hui, ils sont essentiels pour naviguer en toute sécurité dans le monde numérique
+    </p>
+
+    <h3>Caesar</h3>
+    <p class="p">
+        Le chiffrement de César est l'un des plus anciens et des plus simples algorithmes de chiffrement. Il date de l'Antiquité et tire son nom de Jules César, qui l’a utilisé le premier. Il consiste à décaler chaque lettre du texte clair d'un nombre fixe de positions dans l'alphabet. Par exemple, avec un décalage de 3, la lettre "A" devient "D", "B" devient "E", etc. Le même décalage est utilisé pour chaque lettre du message.
+    </p>
+    <p class="p"><b>Exemple :</b></p>
+    <p style="padding-left: 150px;" class="p">
+        <b>TEST</b><ion-icon style="font-size: 25px; padding: 0px 50px ;" name="arrow-forward"></ion-icon><b style="padding-right: 50px;">YJXY</b> avec un décalage de 5
+    </p>
+    <p class="p">
+        Ce chiffrement est simple et facilement contournable puisqu'il n'existe que 25 combinaisons possibles. Dans le cas où nous ne connaissons pas le décalage, il existe des sites qui affichent tous les décalages possibles d'un mot, comme <a href="https://manansingh.github.io/Cryptolab-Offline/c2-brute-caesar.html">Brute Force Attack</a>. Ainsi, il ne reste plus qu'à choisir la combinaison qui semble la plus probable.
+    </p>
+
+    <h3>RSA</h3>
+    <p class="p">
+        Le RSA est un algorithme de chiffrement asymétrique qui utilise une clé publique et une clé privée. Il repose sur la difficulté de factoriser de grands nombres. Pour créer les clés, deux grands nombres premiers sont choisis, puis leur produit est calculé. La clé publique sert à chiffrer le message, et la clé privée sert à le déchiffrer. Le message est chiffré en élevant le texte à une puissance spécifique, puis réduit modulo le produit des nombres premiers. La sécurité du RSA vient du fait qu'il est facile de multiplier de grands nombres, mais très difficile de les factoriser.
+    </p>
+
+    <h3>AES</h3>
+    <p class="p">
+        AES (Advanced Encryption Standard) est un algorithme de chiffrement symétrique qui utilise la même clé pour chiffrer et déchiffrer les données. Il fonctionne sur des blocs de 128 bits et utilise des clés de 128, 192 ou 256 bits. La sécurité de l'AES repose sur la complexité de ces transformations et la taille de la clé, ce qui le rend extrêmement difficile à casser avec des méthodes classiques de cryptanalyse. AES est utilisé pour chiffrer de grandes quantités de données puisqu'il chiffre plus rapidement que le RSA.
+        Cependant, dans les cas pratiques, le RSA est souvent utilisé pour chiffrer la clé symétrique qui sera ensuite utilisée pour chiffrer les données avec AES. Cela permet de combiner la rapidité de l'AES avec la sécurité du RSA. Le RSA, étant un algorithme asymétrique plus lent que l'AES, est idéal pour protéger la clé AES lors de son transfert, tandis que l'AES, plus rapide, est utilisé pour le chiffrement des données elles-mêmes. Ainsi, l'AES et le RSA se complètent pour offrir une solution à la fois sécurisée et performante.
+    </p>
+    <p class="p">
+        Dans notre étude, nous allons nous concentrer sur l'utilisation de clés de 128 bits, la plus petite taille de clé AES, mais qui offre déjà un niveau de sécurité élevé. Pour nos exercices pratiques, nous utiliserons le site <a href="https://www.devglan.com/online-tools/aes-encryption-decryption">Devglan</a>, un outil en ligne qui permet de chiffrer et de déchiffrer facilement des textes. Les seuls paramètres sur lesquels nous interviendrons seront le texte à chiffrer et la clé que nous définirons nous-mêmes, permettant ainsi de nous familiariser avec le processus de chiffrement AES.
+    </p>
+
+    <h1>Stéganographie</h1>
+    <p class="p">
+        La stéganographie est l'art de dissimuler des informations secrètes dans un autre support, de manière à ce qu'elles ne soient pas détectées. Contrairement au chiffrement, qui transforme un message pour le rendre illisible sans la clé, la stéganographie vise à cacher l'existence même du message. Les données secrètes peuvent être intégrées dans des images, des vidéos, des fichiers audio ou même du texte. L'objectif est de passer inaperçu tout en permettant la communication secrète. La stéganographie est utilisée dans divers domaines, notamment la sécurité, les communications privées et l'évasion de la surveillance.
+    </p>
+
+    <h3>BMP</h3>
+    <p class="p">
+        La stéganographie permet de cacher un message secret dans un fichier image, et l'un des formats les plus simples pour cela est le BMP (Bitmap). Ce format, qui stocke l'image sous forme de pixels, offre un moyen facile de dissimuler des données dans les bits des pixels sans affecter de manière visible l'image.
+    </p>
+    <p class="p">Voici comment cela fonctionne :</p>
+    <ol class="p">
+        <li>
+            <b>Représentation des pixels :</b> Une image BMP est composée de pixels, et chaque pixel est généralement représenté par trois composantes : rouge (R), vert (G) et bleu (B). Chaque composante est codée sur 8 bits, ce qui donne 256 niveaux de couleurs possibles par composante.
+        </li>
+        <li>
+            <b>Choix du message à cacher :</b> Le message secret, qui peut être un texte ou un fichier, doit être converti en une chaîne binaire. Par exemple, chaque caractère du message peut être représenté en ASCII, où chaque caractère est codé sur 8 bits.
+        </li>
+        <li>
+            <b>Modification des bits de l'image :</b> Pour cacher le message, on peut modifier les bits de poids faible (les derniers bits) des composantes R, G ou B de chaque pixel de l'image. Ces bits sont souvent peu visibles à l'œil humain, ce qui permet de cacher des données sans que l'image semble modifiée. Par exemple, on peut remplacer le dernier bit du composant R par un bit du message secret.
+        </li>
+        <li>
+            <b>Insertion du message :</b> On parcourt l'image pixel par pixel et on remplace les bits de poids faible des composantes R, G ou B par les bits du message binaire. Ce processus peut être réalisé sur une partie ou sur l'ensemble de l'image, selon la taille du message à cacher.
+        </li>
+        <li>
+            <b>Création de l'image cachée :</b> Une fois tous les bits du message insérés, l'image modifiée peut être sauvegardée sous forme d'une nouvelle image BMP. Cette image semblera identique à l'originale à l'œil nu, mais contiendra en réalité le message secret.
+        </li>
+        <li>
+            <b>Extraction du message :</b> Pour récupérer le message caché, on parcourt l'image et on extrait les bits de poids faible des pixels modifiés. Ensuite, on reconstitue le message à partir de ces bits binaires.
+        </li>
+    </ol>
+    <p class="p">
+        En utilisant cette méthode, il est possible de cacher un message dans une image BMP sans que cela soit perceptible, ce qui en fait un outil puissant pour la stéganographie.
+    </p>
+    <p class="p">
+        Vous trouverez ci-dessous un programme Python permettant de cacher un message dans une image BMP, ainsi que d'extraire un message de ce type d'image.
+    </p>
+    
+
+    
+    <div style="display: flex; justify-content: space-around;">
+        <div style="margin-top: 85px;">
+            <h1>Rendu</h1>
+            <div class="box-1">
+                <h2>Rendez votre travail ici</h2>
+                <button style="justify-self: center; margin-bottom: 25px;"><ion-icon name="download-outline"></ion-icon></button>
+            </div>
+            <div class="box-1" style="margin-bottom: 250px;">
+                <h2>Programme python</h2>
+                <div class="box-2" style="margin-bottom: 15px;">
+                    <p>bmp.py</p><a href="epreuves\bmp.py" download="epreuves\bmp.py"><button style="padding-top: 5px; margin-left: 10px;"><ion-icon name="download-outline"></ion-icon></button></a> 
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>Forum de questions</h1>
+            <div class="box-1">
+                <a href="profile.html" class="profilepicture" style="position: absolute; padding: 15px 15px; margin: 15px 0px 0px 100px;">TS</a>
+                <h2 style="margin-left: 100px;">.exe ne s'ouvre pas </h2>
+                <div>
+                    <h4 class="forumuser">Thomas Scholz</h4>
+                    <h4 class="message">Bonjour, je n'arrive pas a ouvrir un .exe de mon cours d'applications des maths. Pouvez-vous m'aider ?</h4>
+                    <div class="box-2" style="margin-bottom: 25px;">
+                        <p >Exercice_4.exe</p>
+                        <a href="epreuves/Exercice_4.exe" download="epreuves/Exercice_4.exe"><button style="padding-top: 5px; margin-left: 10px;"><ion-icon name="download-outline"></ion-icon></button></a>
+                    </div>
+                </div> 
+                <div class="box-2">
+                    <p>Nouvelle conversation</p><button style="padding-top: 5px"><ion-icon name="add-circle-outline"></ion-icon></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+ 
+
+<footer>
+    <p style="font-size: 100%; font-weight: 500; color: #9d9d9d; align-items: center;">Copyright © N/A - V.0.0.1</p>
+    <img src="image/logo lbc.png" alt="logo LBC">
+    <nav class="nodot"> <a>Navigation</a>
+        <li><a class="footernav" href="index.html">Accueil</a></li>
+        <li><a class="footernav" href="classes.html">Classes</a></li>
+        <li><a class="footernav" href="contacts.html">Contacts</a></li>
+        <li><a class="footernav" href="culture.html">Culture</a></li>
+        <li><a class="footernav" href="profile.html">Profile</a></li>
+    </nav>
+</footer>

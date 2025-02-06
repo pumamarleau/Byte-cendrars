@@ -1,0 +1,131 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{ 
+    margin: 0;
+    padding: 0;
+    background-color: #3B7693;
+}
+
+/*-----menu de navigation-----*/
+
+header{
+    border-bottom: 15px solid #315a6f;
+    background-color: #3B7693;
+}
+  
+#tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+}
+
+#imgLBC{
+    margin: 10px 35px 10px 20px;
+    width: 125px;
+}
+  
+.tabs{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 250%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    width: 25%;
+    padding: 35px 0px 35px 0px;
+}
+
+.profilepicture{
+    background-color: #e9ecef;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #343a40;
+    font-weight: 200;
+    font-family: "Open Sans", sans-serif;
+}
+
+.profiletab{
+    padding: 1% 1%;
+    font-size: 50px;
+    margin: 0px 0px 0px 10px;
+    text-decoration: none;
+}
+  
+.tabs:hover{
+    background-color: #35637a;
+}
+  
+.active{ /*classe qui est lié à l'onglet actif, celui sur lequel on se trouve, pour le différencier des autres*/
+    background-color: #315a6f;
+}
+  
+/*-----footer-----*/
+  
+footer{
+    font-size: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: #9d9d9d;
+    padding: 30px 15% 30px 15%;
+    background-color: #666666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+  
+.socialnetwork{ /*classe modifiant les logo de réseau sociaux du footer*/
+    width: 10%;
+    padding: 10px 10px 0px 10px;
+    pointer-events: fill;
+}
+  
+.footernav{
+    font-size: 75%;
+    color: #ffffff;
+    text-decoration: none;
+    pointer-events: fill;
+}
+
+/*-----autre-----*/
+
+.nodot{ /* une classe que nous avont fréquement utilisé pour simplement enlever le style d'une liste (les petit points d'où le nom "nodot")*/
+    list-style-type: none;
+}
+
+.flex{
+    display: flex;
+}
+
+
+
+#img-accueil{
+    width: 100%;
+    height: auto;
+}
+
+#accueil-h1{
+    color: #ffffff;
+    font-size: 100px;
+    font-family: "Open Sans", sans-serif;
+    justify-self: center;
+    margin-top: 200px;
+}
+
+#accueil-h2{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    justify-self: center;
+    text-align: center;
+    margin: 25px 250px;
+    margin-bottom: 75px; 
+    font-weight: 400;
+    text-wrap: wrap;
+}
